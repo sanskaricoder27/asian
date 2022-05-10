@@ -1,0 +1,2797 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+:root {
+    --border: 0.1rem solid #aaa;
+    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.43, 1.1, 0.62, 1.08);
+    text-transform: capitalize;
+}
+
+.header {
+    width: 100vw;
+    height: 2vh;
+    background: #AFEAFF;
+}
+
+.navbar-custom {
+    background: white;
+    width: 100vw;
+}
+
+.asian-nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 13rem;
+    height: 5rem;
+    ;
+}
+
+.logo a img {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+.navbar-custom .navbar-nav .nav-item .nav-link {
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.sliders {
+    width: 100vw;
+    height: 70vh;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* order form :start */
+.order-form-wrapper{
+    width: 30vw;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    /* background: black; */
+    /* opacity: 0.9; */
+    transform: translate(-50% , -50%);
+    position: fixed;
+    z-index: 1000;
+    display: none;
+}
+ .order-form-wrapper .form-wrapper{
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    background: #d7e5ff;
+    border-radius: 10px;   
+}
+.form-wrapper .order-form{
+    width:90%;
+    display: grid;
+    margin: 0px auto;
+    height: 100%;   
+  background: #d7e5ff;
+    padding: 1rem;
+    border-radius: 5px;
+}
+.form-wrapper .order-form input,textarea,select{
+    width: 100%;
+    margin: 0.2rem 0px;
+    padding: 0.7rem;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+.form-wrapper .order-form .btn{
+    font-size: 1rem;
+    width: 10rem;
+    margin: 0px auto;
+}
+ /* order form :end */
+/* product-section */
+.product-wrapper {
+    width: 100vw;
+    height: 60vh;
+    margin: 3rem 0px;
+}
+
+.product-wrapper .swiper {
+    width: 80%;
+    height: 100%;
+}
+
+.product-wrapper .swiper-slide {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.product-wrapper .orderdata {
+    width: 100%;
+    height: auto;
+    background: #fffdfd;
+    border-radius: 10px;
+}
+.product-wrapper .orderdata .orderdata-wrapper{
+    background: #afeaff;
+    padding: 1rem;
+}
+.product-wrapper .orderdata .orderdata-wrapper>h1{
+    font-size: 2rem;
+    font-family: 'rubik',cursive;
+    font-weight: 700;
+}
+
+.product-wrapper .orderdata img {
+    width: 50%;
+    height: 70%;
+    margin: 0px auto;
+}
+
+.about{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 40vh;
+    margin: 3rem auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.about-img{
+    width: 100%;
+    height: 100%;
+}
+.about-img img{
+    width: 100%;
+    height: 100%;
+    /* border-radius: 5px; */
+}
+.details-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: #afeaff;
+    /* border-radius: 5px; */
+    overflow: hidden;
+    border-left: 1px solid black;
+}
+.about-heading{
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.568);
+    color: white;
+    padding: 0.1rem;
+}
+.about-heading >h1{
+    font-family: 'Abril Fatface', cursive;
+}
+.about-para{
+    width: 100%;
+    padding: 1rem;
+}
+.about-para p{
+    font-size: 1.3rem;
+}
+.about-para>ol>li{
+    font-size: 1.3rem;
+}
+/* deal */
+.deal{
+    width: 100%;
+    height: 40vh;
+    display: block;
+    text-align: center;
+    padding: 2rem;;
+}
+
+.deal h1{
+    padding: 1rem;
+}
+.deal .btn{
+    padding: 0.3rem 2rem;
+    font-size: 1.5rem;
+}
+/* deal :end */
+
+ .d-boffin-wrapper{
+     width: 80vw;
+     height: auto;
+     margin: 2rem auto;
+     background: #afeaff;
+     padding: 1rem;
+     border-radius: 5px;
+     overflow: hidden;
+
+ }
+ .d-bofin-img img{
+     width: 300px;
+     height: 450px;
+     float: left;
+     margin: 1rem;
+     border-radius: 10px;
+ }
+ .d-boffin-wrapper p{
+     text-align: justify;
+     font-size: 1.2rem;  
+ }
+ .d-boffin-wrapper>ol >li{
+        text-align: justify;
+     font-size: 1.2rem; 
+ }
+ .d-boffin-wrapper>h1{
+     font-size: 2.5rem;
+     font-family: 'Abril Fatface', cursive;
+ }
+ /* contact */
+ .contact-baner {
+    height: 65vh;
+    width: 100%;
+}
+
+.contact-baner h1 {
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    font-weight: bold;
+    font-size: 5rem;
+    color: #d7e5ff;
+    text-transform: uppercase;
+}
+
+.contact-baner h3 {
+    position: absolute;
+    top: 57%;
+    left: 39.6%;
+    color: #d7e5ff;
+    font-size: 4rem;
+}
+
+.contact-baner .logo-contact {
+    position: absolute;
+    top: 10%;
+    right: 1%;
+    height: 15rem;
+    width: 30rem;
+}
+
+.contact-baner img {
+    height: 100%;
+    width: 100%;
+}
+
+.getinwrapper{
+  margin:  2rem 0px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* background: #e9f5ff; */
+}
+.iconcontaier {
+    width:100%;
+    text-align: center;
+}
+
+.icon-contect {
+    font-size: 4rem;
+    color: #0599fc;
+}
+
+.iconcontaier h1 {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+.iconcontaier p {
+    font-size: 1rem;
+}
+
+.map {
+    height: 40vh;
+    width: 100%;
+    margin: 0px auto;
+}
+.broiler{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction:row;
+    overflow: hidden;
+    border-bottom: 2px solid lightgray;
+}
+.broiler .broiler-wrapper{
+    width: 50%;
+    height: 100%;
+}
+.broiler .broiler-wrapper img{
+    width: 100%;
+    height: 100%;
+}
+.broiler .contact{
+    width: 50%;
+    height: auto;
+    background: #AFEAFF;
+}
+.broiler .contact h1{
+    padding: 1rem;
+}
+.broiler .contact .form3 {
+    width: 60%;
+    height: 100%;
+    margin: 0px auto;
+}
+
+.form3 .inputContainer i {
+    position: absolute;
+}
+
+.form3 .inputContainer {
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.form3 .icon {
+    color: #afeaff;
+    padding: 1rem;
+   font-size: 1.3rem;
+}
+
+.form3 .Field {
+    width: 100%;
+    padding: 0.6rem 3rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: .3rem;
+    border:1px solid lightgrey;
+}
+.form3 .btn{
+    padding: 0.3rem 1.2rem;
+    font-size: 1.2rem;
+    float: right;
+}
+
+
+/* dealership */
+.cf{
+    width: 100%;
+    height: auto;
+}
+.cf-wrapper{
+    width: 100%;
+    display: grid;
+    margin: 1rem 0px;
+    grid-template-columns: 1fr 1fr;
+}
+.cf-wrapper .cf-img{
+    width: 100%;
+    height: 100%;
+}
+.cf-wrapper .cf-img img{
+    width: 100%;
+    height: 100%;
+}
+.cf-wrapper .cf-content{
+    width: 100%;
+    height: 100%;
+    text-align: justify;
+}
+.cf-wrapper .cf-content .cf-title{
+width: 100%;
+height: auto;
+text-align: center;
+background: #AFEAFF;
+}
+.cf-wrapper .cf-content .cf-title h1{
+    font-size: 2.5rem;
+    padding: 0.5rem;
+   
+    }
+.cf-wrapper .cf-content .cf-content-wrapper{
+    width: 100%;
+    color: #555;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.contact>ul>li{
+    font-size: 1.5rem;
+}
+.cover-page{
+    width: 100%;
+    height: 40vh;
+    display: block;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* deal form */
+.deal-form{
+    width:98%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* background: #AFEAFF; */
+    padding: 0rem;
+    overflow: hidden;
+    margin: 2rem auto;
+    border-radius: 5px;
+}
+ .deal-form .deal-form-wrapper{
+    width: 100%;
+    height: 80%;
+    /* background: #EEEEEE; */
+}
+.deal-form-wrapper .enquiry-form{
+    width: 100%;
+    display: grid;
+    margin: 0px auto;
+    height: auto ;   
+    background: #d7e5ff;
+    padding: 1rem;
+    border-radius: 5px;
+}
+.deal-form .deal-poster{
+    width: 100%;
+    height:auto;
+    background: #AFEAFF;
+}
+.deal-form-wrapper .enquiry-form h1{
+    font-size: 2rem ;
+}
+.deal-form-wrapper .enquiry-form input,textarea{
+    width: 100%;
+    margin: 0.2rem 0px;
+    padding: 0.7rem;
+    border: 1px solid #d7e5ff;
+    border-radius: 5px;
+}
+.deal-form-wrapper .enquiry-form .btn{
+    font-size: 1rem;
+    width: 10rem;
+    margin: 0px auto;
+}
+/* deal form :end */
+/* testimonial :start */
+.testimonials {
+    height: auto;
+    width: 100%;
+    background: #EEEEEE;
+    /* background: yellow; */
+}
+
+.testimonials-heading h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #0599fc;
+    /* animation: lightSpeedInRight;
+    animation-duration: 2s; */
+    padding: 0.5rem;
+}
+
+.testimonials .testimonials-wrapper {
+    height: 100%;
+    width: 80%;
+    column-gap: 2rem;
+    row-gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 2rem auto;
+    padding: 1rem;
+    overflow: hidden;
+    /* background: rgb(145, 145, 143); */
+  
+}
+
+.testimonials-content {
+    height: 100%;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    padding: 0.5rem;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    background: #AFEAFF;
+    box-shadow: 0 0.5rem 0.5rem rgb(0 0 0 / 60%);
+}
+
+.testimonials-content:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+
+.testimonials-content .details {
+    height: auto;
+    width: 100%;
+    padding: 1rem;
+    background: white;
+    
+}
+.testimonials-content .details p {
+  
+    font-size: 1rem;
+    color: grey;
+}
+
+
+/* testimonial :end */
+
+
+/* dealership end*/
+
+#mySidenav a {
+    position: fixed;
+    left: -11rem;
+    transition: 0.3s;
+  padding: 1rem;
+    width: 16rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    z-index: 10;
+    color: white;
+    border-radius: 0 .5rem .5rem 0;
+}
+
+#mySidenav a:hover {
+    left: 0;
+}
+
+#facebook {
+    top: 50%;
+    background-color: #1e3d9b;
+}
+
+#youtube {
+    top: 56%;
+    background-color: #c41e1e;
+}
+
+#linkedin {
+    top: 62%;
+    background-color: #0288d1;
+}
+
+#instagram {
+    top: 68%;
+    background: #e91d7f;
+}
+
+#twitter {
+    top: 74%;
+    background-color: #41a1f2;
+}
+
+
+
+ /* contact */
+/* dummy  */
+.intro {
+    padding: 0px;
+}
+
+.int {
+    width: 90%;
+    height: auto;
+    padding: 1rem;;
+    margin: 2rem auto;
+    background: #ffffff;
+}
+
+.intro-heading h1 {
+    margin: 0px auto;
+    font-size: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-transform: uppercase;
+    color: #0599fc;
+    width: 30%;
+    border-bottom: 2px solid #0599fc;
+    padding: 1rem;
+}
+
+.intro-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro-img {
+    width: 40%;
+    height: 75%;
+    margin: 2px auto;
+    margin: 1rem;;
+    overflow: hidden;
+    animation: zoomIn;
+    animation-duration: 2s;
+    border-radius: 1rem;
+    /* box-shadow: 0 2.5rem 2.5rem rgba(0, 0, 0, 0.452); */
+}
+
+.intro-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.intro-details {
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+    margin-top: 4rem;
+    font-size: 2rem;
+}
+
+.intro-details a {
+    text-decoration: none;
+font-size: 1.5rem;
+margin: 1rem;
+    text-align: center;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    float: right;
+
+    text-transform: uppercase;
+    border-radius: .3rem;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0;
+    animation: rotateIn;
+    animation-duration: 2s;
+    animation-delay: 15s;
+    background-image: linear-gradient(to bottom right, rgb(2, 85, 211) 0%, rgb(14, 154, 197) 100%);
+    border: double .1rem transparent;
+    box-shadow: 0 1.5rem 1.7rem rgb(0 0 0 / 10%);
+}
+
+.intro-details p {
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+.intro-details a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* introduction section */
+/* gellery section :start */
+.gallery {
+    padding: 0px;
+}
+
+.gallery .title {
+    width: 100%;
+    /* background: yellow; */
+}
+
+.gallery .title h1 {
+    margin: 0px auto;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #0599fc;
+    width: 25%;
+    border-bottom: 2px solid #0599fc;
+    padding: 1rem;
+}
+
+.gallaryswip {
+    width: 80%;
+    height: 40vh;
+    margin: 2rem auto;
+    overflow: hidden;
+    /* background: #aaa; */
+}
+
+.gallaryswip .swiper-slide {
+    width: 80%;
+    height: 80%;
+    /* background: blue; */
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    cursor: pointer;
+    /* margin-right: 2rem; */
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.gallaryswip .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    /* box-shadow: 0 2rem 2rem rgb(0 0 0 / 35%); */
+    overflow: hidden;
+}
+
+
+
+/* gallery section  */
+
+.gallery2 {
+   width: 70vw;
+   height: auto;
+   margin: 0px auto;
+   overflow: hidden;
+}
+
+.gallery2 .img2 {
+    margin: 2rem auto;
+    background: #AFEAFF;
+    padding: 1rem;
+}
+
+.gallery2 .gallery-heading h1 {
+    margin: 0px auto;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #0599fc;
+    width: 30%;
+    border-bottom: 2px solid #0599fc;
+    padding: 1rem;
+}
+
+
+.gallery2 .product1 {
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* background: yellow; */
+    overflow: hidden;
+    margin: 0px auto;
+}
+
+.main1 h1 {
+    margin: 0px auto;
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #000000;
+    width: 35%;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #000000;
+    padding: 1rem;
+}
+
+.product1 .swiper-slide {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0);
+    display: flex;
+    padding: 1rem;
+}
+
+.product1 .swiper-slide img {
+    height: 100%;
+    width: 80%;
+    border-radius: 1rem;
+
+}
+
+.service {
+    height: auto;
+    width: 100%;
+    display: flex;
+    margin: 2rem auto;
+}
+
+.service .part1 {
+    height: 100%;
+    width: 50%;
+}
+
+.service .part2 {
+    height: 100%;
+    width: 50%;
+}
+
+.service .part1 h1 {
+    margin: 0px auto;
+    font-size: 2rem;
+    font-weight: bold;
+    color: brown;
+    text-transform: uppercase;
+    padding: 1rem;
+    text-align: center;
+}
+
+.service .part1 li {
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    text-transform: none;
+}
+
+.service .part2 h1 {
+    margin: 0px auto;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: brown;
+    padding: 1rem;
+    text-align: center;
+}
+
+.service .part2 p {
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    text-transform: none;
+}
+
+.service .part2 a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 800;
+    text-align: center;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    float: right;
+    text-transform: uppercase;
+    border-radius: .3rem;
+    margin: 1rem;
+    box-shadow: 0 1.5rem 1.7rem rgb(0 0 0 / 20%);
+}
+/* about section :start */
+.about01{
+    width: 100%;
+    height:auto ;
+}
+.about01-wrapper{
+    width: 80%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem auto;
+}
+.about01-wrapper .part1{
+    width: 100%;
+    height: 100%;
+    background: #EEEEEE;
+    padding: 1rem;
+}
+.about01-wrapper .part1 > h3{
+    font-size: 2.2rem;
+    text-align: center;
+}
+.about01-wrapper .part1 >p{
+    font-size: 1.3rem;
+    margin: 2rem 0px;
+}
+.about01-wrapper .part2{
+    width: 100%;
+    height: 100%;
+    background: gray;
+    border-radius: 10px;
+
+}
+.about01-wrapper .part2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.vision{
+    width: 80%;
+    height: 70%;
+    margin: 2rem auto;  
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.vision .backpic{
+    width: 100%;
+    height: 100%;
+}
+.vision .backpic img{
+    width: 100%;
+    height: 100%;
+}
+.vision .backpic .back{
+    width: 80%;
+    height: 15rem;
+    background: black;
+    opacity: 0.7;
+    z-index: 100;
+    position: absolute;
+    transform: translate(0%, -100%);
+}
+.vision .backpic .back >p{
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: white;
+}
+
+
+.about2{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    margin: 2rem 0px;
+}
+ .about2 .part{
+    width: 90%;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem auto;
+}
+.part .part1{
+    width: 100%;
+    height: 100%;
+    background: gray;
+    border-radius: 10px;
+
+}.part .part1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}.part .part2{
+    width: 100%;
+    height: 100%;
+    background: #EEEEEE;
+    padding: 1rem;
+}
+.part .part2 > h3{
+    font-size: 2.2rem;
+    text-align: center;
+}.part .part2 >p{
+    font-size: 1.5rem;
+    margin: 2rem 0px;
+}
+
+
+ /* about section :end */
+ .yt-video {
+  width: 100%;
+  margin: 2rem 0px;
+}
+
+.yt-video .title h1 {
+    margin: 0px auto;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Abril Fatface', cursive;
+    text-transform: uppercase;
+}
+
+.yt-video .swiper{
+    width: 90%;
+    
+}
+.yt-video .swiper .gallaryswip{
+    width: 80%;
+}
+.yt-video .swiper .gallaryswip .swiper-slide{
+    width: 80%;
+    height: 100%;
+}
+ .yt-video .swiper .swiper-button-next{
+    color:  black;
+    font-size: 1rem;
+}
+.yt-video .swiper .swiper-button-prev{
+    color:  black;
+    font-size: 1rem;
+}
+/* gellery section :end */
+
+.footer {
+    background: black;
+    height: auto;
+}
+.footer-wrapper{
+    margin: 0rem auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.usefulfooter {
+    width:29%;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.usefulfooter {
+    color: rgb(143, 142, 142);
+}
+
+.usefulfooter li {
+    font-size: 1rem;
+    margin: 0.5rem;;
+}
+
+.usefulfooter a {
+    text-decoration: none;
+    color:  white;
+}
+
+.usefulfooter a:hover {
+    color: rgb(143, 142, 142);
+    text-decoration: none;
+}
+
+.usefulfooter .title > h1 {
+    font-size: 1.5rem;
+}
+
+.usefulfooter img {
+    height: 89%;
+    width: 65%;
+}
+
+.enquiry {
+    width: 29%;
+    justify-content: center;
+    display: grid;
+    text-align: center;
+    align-content: center;
+}
+
+.enquiry h1 {
+    font-size: 1.6rem;
+    color: rgb(143, 142, 142);
+}
+
+.enquiry .button {
+    border-radius: 0.7rem;
+    width: 15rem;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0;
+    background-image: linear-gradient(to bottom right, rgb(2, 85, 211) 0%, rgb(14, 154, 197) 100%);
+    border: double 0.1rem transparent;
+    box-shadow: 0 1.5rem 1.7rem rgb(0 0 0 / 10%);
+    text-decoration: none;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 1rem auto;
+}
+
+.footericons {
+    display: flex;
+    justify-content: center;
+}
+
+.footericons .icon {
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem;
+}
+
+.footericons img {
+    width: 100%;
+    height: 100%;
+}
+
+.footericons .icon:hover {
+    transform: scaleX(1);
+}
+
+.contectfooter {
+    width: 29%;
+    text-align: center;
+    display: grid;
+    justify-items:center;
+    margin: 2rem 0px;
+}
+
+.contectfooter h2 {
+    font-size: 1rem;
+    color: white;
+}
+
+.contectfooter .footercontect {
+    margin: 1rem 0px;
+
+}
+
+ .footercontect .iconscontect {
+    color: #0599fc;
+    font-size: 2rem;
+}
+
+.footercontect p {
+    color: rgb(143, 142, 142);
+    font-size: 0.9rem;
+}
+
+
+/* dummy :end */
+
+/* product section :end */
+@media (max-width: 1440px) {
+    .sliders{
+        height: 55vh;
+    }
+    .product-wrapper {
+        width: 100vw;
+        height: 80vh;
+        margin: 3rem 0px;
+    }
+
+    .product-wrapper .swiper {
+        width: 90%;
+        height: 100%;
+    }
+    .product-wrapper .orderdata img {
+        width: 70%;
+        height: 60%;
+        margin: 0px auto;
+    }
+    .about{
+        width: 90%;
+    }
+    .d-boffin-wrapper{
+        width: 90%;
+    }
+    .d-boffin-wrapper p{
+        text-align: justify;
+        font-size: 1.1rem;  
+    }
+    .d-boffin-wrapper>ol >li{
+        text-align: justify;
+     font-size: 1.1rem; 
+ }
+    .d-boffin-wrapper h1{
+        font-size: 2.1rem;
+    }
+    .broiler{
+        display: flex;
+        height: auto;
+     }
+    .broiler .broiler-wrapper{
+        width: 100%;
+        height: auto;
+    }
+    .broiler .contact{
+        width: 100%;
+    }
+    .broiler .contact h1{
+        font-size: 1.8rem;
+        padding: 1rem;
+    }
+    .broiler .contact .form3 {
+        width: 90%;
+    }
+    .broiler .contact .form3 .Field{
+        font-size: 1rem;
+    }
+    .form3 .btn{
+        padding: 0.1rem 1rem;
+        font-size: 1.3rem;
+        float: right;
+    }
+    .cf-wrapper{
+        width: 100%;
+        margin: 1rem auto;
+        border: 1px solid lightgray;
+        display: grid;
+        border-radius: 5px;
+        grid-template-columns: 1fr 1fr ;
+    }
+    .cf-wrapper .cf-content .cf-title h1{
+        font-size: 1.7rem;
+        
+    }
+    .cf-wrapper .cf-content .cf-content-wrapper{
+        font-size: 1.2rem;
+    }
+    .contact>ul>li{
+        font-size: 1.2rem;
+    }
+    .deal-form {
+    width: 100%;
+    grid-template-columns:  1fr 2fr;
+    }
+    .deal-form .deal-form-wrapper .enquiry-form{
+        width: 100%;
+    }
+    .order-form-wrapper{
+        width: 40vw;
+    }
+    .order-form-wrapper .form-wrapper{
+        width: 100%;
+        height: 100%;
+        margin: 0px auto;
+        background: #d7e5ff; 
+        border-radius: 10px;   
+    }
+    .form-wrapper .order-form{
+        width:90%;
+        margin: 0px auto;
+        height: 100%;   
+        background: #d7e5ff;
+        padding: 0.2rem;
+        
+    }
+    .form-wrapper h1{
+        font-size: 1.7rem;
+        padding: 0.5rem;
+    }
+    .form-wrapper .order-form input,textarea,select{
+        width: 100%;
+        margin: 0.2rem 0px;
+        padding: 0.4rem;
+    }
+    .form-wrapper .order-form .btn{
+        font-size: 0.9rem;
+        width: 5rem;
+        margin: 0px auto;
+    }
+    .cover-page{
+        width: 100%;
+        height: 29vh;
+    }
+    
+}
+
+@media (max-width: 1024px) {
+    .sliders{
+        height: 55vh;
+    }
+    .product-wrapper {
+        width: 100vw;
+        height: 80vh;
+        margin: 3rem 0px;
+    }
+
+    .product-wrapper .swiper {
+        width: 90%;
+        height: 100%;
+    }
+    .product-wrapper .orderdata img {
+        width: 70%;
+        height: 60%;
+        margin: 0px auto;
+    }
+    .d-boffin-wrapper p{
+        text-align: justify;
+        font-size: 1rem;  
+    }
+    .d-boffin-wrapper>ol >li{
+        text-align: justify;
+     font-size: 1rem; 
+ }
+    .d-boffin-wrapper h1{
+        font-size: 2rem;
+    }
+    .about{
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 2fr ;
+        column-gap: 0.2rem;
+        height: auto;
+        margin: 3rem auto;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .about-img{
+        width: 100%;
+        height: 100%;
+    }
+    .about-img img{
+        width: 100%;
+        height: 100%;
+        /* border-radius: 5px; */
+    }
+    .details-wrapper{
+        width: 100%;
+        height: 100%;
+        background-color: #afeaff;
+        /* border-radius: 5px; */
+        overflow: hidden;
+    }
+    .about-heading{
+        width: 100%;
+        height: auto;
+        background: rgba(0, 0, 0, 0.568);
+        color: white;
+        padding: 0.1rem;
+    }
+    .about-heading>h1{
+        font-size: 1.5rem;
+    }
+    .about-para{
+        width: 100%;
+        padding: 1rem;
+    }
+    .about-para p{
+        font-size: 1rem;
+    }
+    .about-para>ol>li{
+        font-size: 1rem;
+    }
+    .deal{
+        width: 100%;
+        height: 30vh;
+        overflow: hidden;
+        color: white;
+    }
+    .broiler{
+        display: flex;
+        height: auto;
+     }
+    .broiler .broiler-wrapper{
+        width: 100%;
+        height: auto;
+    }
+    .broiler .contact{
+        width: 100%;
+    }
+    .broiler .contact h1{
+        font-size: 1.8rem;
+        padding: 1rem;
+    }
+    .broiler .contact .form3 {
+        width: 90%;
+    }
+    .broiler .contact .form3 .Field{
+        font-size: 1rem;
+    }
+    .form3 .btn{
+        padding: 0.1rem 1rem;
+        font-size: 1.3rem;
+        float: right;
+    }
+    .getinwrapper .iconcontaier h1{
+        font-size: 1.5rem;
+    
+    }
+    .getinwrapper .iconcontaier .icon-contect{
+        font-size: 2.5rem;
+    }
+    .getinwrapper .iconcontaier p{
+        font-size: 0.9rem;
+    }
+    .cf-wrapper{
+        width: 100%;
+        margin: 1rem auto;
+        border: 1px solid lightgray;
+        display: grid;
+        border-radius: 5px;
+        grid-template-columns: 1fr 1fr ;
+    }
+    .cf-wrapper .cf-content .cf-title h1{
+        font-size: 1.7rem;
+        
+    }
+    .cf-wrapper .cf-content .cf-content-wrapper{
+        font-size: 1.2rem;
+    }
+    .contact>ul>li{
+        font-size: 1.2rem;
+    }
+    .deal-form{
+        width: 100%;
+        grid-template-columns:  1fr 2fr;
+    }
+    .deal-form .deal-form-wrapper{
+        padding: 0rem;
+
+    }
+    .deal-form .deal-form-wrapper .enquiry-form {
+        width:100%;
+    }
+    .deal-poster{
+        transform: translatey(-0%);
+    }
+    .deal-form .deal-form-wrapper .enquiry-form> h1{
+        font-size: 1.8rem;
+    }
+    .deal-form-wrapper .enquiry-form input,textarea{
+        width: 100%;
+        margin: 0.2rem 0px;
+        padding: 0.4rem;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        font-size: 0.9rem;
+    }
+    .deal-form-wrapper .enquiry-form .btn{
+        font-size: 0.8rem;
+        width: 10rem;
+        margin: 0px auto;
+    }
+    .testimonials-heading h1{
+        font-size: 1.8rem;
+        
+    }
+    .testimonials .testimonials-wrapper {
+        height: 100%;
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        /* background: rgb(145, 145, 143); */
+    }
+    .testimonials-content .upon .company-icon{
+        width: 100%;
+        height: 100%;
+    }
+    .company h2 {
+        font-size: 1.2rem;
+        color: #bfbfbf;
+        text-transform: uppercase;
+        font-weight: bolder;
+    }
+    
+    .company h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .testimonials-content .details{
+        font-size: 1rem;
+    }
+    .order-form-wrapper{
+        width: 50vw;
+    }
+    .order-form-wrapper .form-wrapper{
+        width: 100%;
+        height: 100%;
+        margin: 0px auto;
+        background: #d7e5ff; 
+        border-radius: 10px;   
+    }
+    .form-wrapper .order-form{
+        width:90%;
+        margin: 0px auto;
+        height: 100%;   
+        background: #d7e5ff;
+        padding: 0.2rem;
+        
+    }
+    .form-wrapper h1{
+        font-size: 1.7rem;
+        padding: 0.5rem;
+    }
+    .form-wrapper .order-form input,textarea,select{
+        width: 100%;
+        margin: 0.2rem 0px;
+        padding: 0.4rem;
+    }
+    .form-wrapper .order-form .btn{
+        font-size: 0.9rem;
+        width: 5rem;
+        margin: 0px auto;
+    }
+    .about01-wrapper .part1 > h3{
+        font-size: 2rem;
+        text-align: center;
+        border-bottom:  1px solid lightgray;
+    }
+    .about01-wrapper .part1 >p{
+        font-size: 1rem;
+        margin: 2rem 0px;
+    }
+    
+    .about01-wrapper{
+        width: 100%;
+        height: 40%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 1rem auto;
+    }
+    .gallery .title h1{
+        font-size: 2rem;
+        width: 40%;
+    }
+    .intro-heading h1{
+        width: 50%;
+        font-size: 2.2rem;
+    }
+    .gallery2{
+        width: 100%;
+    }
+    .yt-video .swiper{
+        width:100%;
+        
+    }
+    .yt-video .swiper .gallaryswip{
+        width:90%;
+    }
+    .yt-video .swiper .swiper-button-next{
+        color:  black;
+    }
+    .cover-page{
+        width: 100%;
+        height: 20vh;
+    }
+    
+}
+
+@media (max-width: 991px) {
+    .asian-nav {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0.3rem;
+    }
+    .navbar-custom .navbar-nav .nav-item .nav-link{
+        font-size: 1.2rem;
+    }
+    .logo {
+        display: none;
+    }
+
+    .sliders {
+        height: 40vh;
+    }
+
+    .product-wrapper {
+        width: 100vw;
+        height: 80vh;
+        margin: 3rem 0px;
+    }
+
+    .product-wrapper .swiper {
+        width: 90%;
+        height: 100%;
+    }
+    .product-wrapper .orderdata img {
+        width: 75%;
+        height: 66%;
+        margin: 0px auto;
+    }
+    .d-boffin-wrapper p{
+        text-align: justify;
+        font-size: 1rem;  
+    }
+    .d-boffin-wrapper>ol >li{
+        text-align: justify;
+     font-size: 1rem; 
+ }
+    .d-boffin-wrapper h1{
+        font-size: 2rem;
+    }
+    .about{
+        width: 70%;
+        display: grid;
+        grid-template-columns:  2fr ;
+        column-gap: 0.2rem;
+        height: auto;
+        margin: 3rem auto;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .about-img{
+        width: 100%;
+        height: 100%;
+    }
+    .about-img img{
+        width: 100%;
+        height: 100%;
+        /* border-radius: 5px; */
+    }
+    .details-wrapper{
+        width: 100%;
+        height: 100%;
+        background-color: #afeaff;
+        /* border-radius: 5px; */
+        overflow: hidden;
+        border: none;
+    }
+    .about-heading{
+        width: 100%;
+        height: auto;
+        background: rgba(0, 0, 0, 0.568);
+        color: white;
+        padding: 0.1rem;
+    }
+    .about-heading>h1{
+        font-size: 1.5rem;
+    }
+    .about-para{
+        width: 100%;
+        padding: 1rem;
+    }
+    .about-para p{
+        font-size: 1rem;
+    }
+    .about-para>ol>li{
+        font-size: 1rem;
+    }
+    .deal{
+        width: 100%;
+        height: 30vh;
+        overflow: hidden;
+        color: white;
+    }
+    .contact-baner {
+        width: 100%;
+        height: 40%;
+        }
+        .broiler{
+            display: grid;
+            height: auto;
+         }
+        .broiler .broiler-wrapper{
+            width: 100%;
+            height: auto;
+        }
+        .broiler .contact{
+            width: 100%;
+        }
+        .broiler .contact h1{
+            font-size: 1.5rem;
+            padding: 1rem;
+        }
+        .broiler .contact .form3 {
+            width: 90%;
+        }
+        .broiler .contact .form3 .Field{
+            font-size: 1rem;
+        }
+        .form3 .btn{
+            padding: 0.1rem 1rem;
+            font-size: 1.3rem;
+            float: right;
+        }
+        .getinwrapper .iconcontaier h1{
+            font-size: 1.3rem;
+        
+        }
+        .getinwrapper .iconcontaier .icon-contect{
+            font-size: 2.5rem;
+        }
+        .getinwrapper .iconcontaier p{
+            font-size: 0.8rem;
+        }
+        .cf-wrapper{
+            width: 80%;
+            margin: 1rem auto;
+            border: 1px solid lightgray;
+            display: grid;
+            border-radius: 5px;
+            grid-template-columns: 1fr ;
+        }
+        .cf-wrapper .cf-content .cf-title h1{
+            font-size: 1.7rem;
+            
+        }
+        .cf-wrapper .cf-content .cf-content-wrapper{
+            font-size: 1.2rem;
+        }
+        .contact>ul>li{
+            font-size: 1.2rem;
+        }
+        .deal-form{
+            width: 100%;
+            grid-template-columns: 1fr;
+        }
+        .deal-form .deal-form-wrapper{
+            padding: 0rem;
+        }
+        .deal-form .deal-form-wrapper .enquiry-form {
+            width: 70%;
+            height: auto;
+        }
+        .deal-form .deal-form-wrapper .enquiry-form> h1{
+            font-size: 1.8rem;
+        }
+        .deal-form-wrapper .enquiry-form input,textarea{
+            width: 100%;
+            margin: 0.2rem 0px;
+            padding: 0.4rem;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+        .deal-form-wrapper .enquiry-form .btn{
+            font-size: 0.8rem;
+            width: 10rem;
+            margin: 0px auto;
+        }
+        .testimonials-heading h1{
+            font-size: 1.8rem;
+            
+        }
+        .testimonials .testimonials-wrapper {
+            height: 100%;
+            width: 80%;
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            /* background: rgb(145, 145, 143); */
+        }
+        .testimonials-content .upon .company-icon{
+            width: 100%;
+            height: 100%;
+        }
+      
+        .testimonials-content .details h4 {
+            font-size: 1.2rem;
+        }
+        
+        .testimonials-content .details p{
+            font-size: 0.8rem;
+        }
+        .order-form-wrapper{
+            width: 60vw;
+        }
+        .order-form-wrapper .form-wrapper{
+            width: 100%;
+            height: 100%;
+            margin: 0px auto;
+            background: #d7e5ff; 
+            border-radius: 10px;   
+        }
+        .form-wrapper .order-form{
+            width:90%;
+            margin: 0px auto;
+            height: 100%;   
+            background: #d7e5ff;
+            padding: 0.2rem;
+            
+        }
+        .form-wrapper h1{
+            font-size: 1.7rem;
+            padding: 0.5rem;
+        }
+        .form-wrapper .order-form input,textarea,select{
+            width: 100%;
+            margin: 0.2rem 0px;
+            padding: 0.4rem;
+        }
+        .form-wrapper .order-form .btn{
+            font-size: 0.9rem;
+            width: 5rem;
+            margin: 0px auto;
+        }
+        .about01-wrapper .part1 > h3{
+            font-size: 2rem;
+            text-align: center;
+            border-bottom:  1px solid lightgray;
+        }
+        .about01-wrapper .part1 >p{
+            font-size: 1rem;
+            margin: 2rem 0px;
+        }
+        
+        .about01-wrapper{
+            width: 100%;
+            height: 40%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: 1rem auto;
+        }
+        .vision{
+            width: 90%;
+            height: 50%;
+            margin: 2rem auto;  
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .vision .backpic .back{
+            width: 90%;
+            height: 20%;
+        }
+        .vision .backpic .back >h1{
+            font-size: 2rem;
+        }
+        .vision .backpic .back >p{
+            font-size: 1.2rem;;
+        }
+        .intro-wrapper {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            justify-content: space-between;
+        }
+        .intro-heading > h1{
+            font-size: 1.5rem;
+            width: 80%;
+        }
+        .intro-wrapper .intro-img{
+            width: 80%;
+        }
+        .intro-wrapper .intro-details{
+            width: 100%;
+        
+        }
+        .intro-wrapper .intro-details > p{
+            font-size: 1rem;
+        }
+        .gallery .title h1{
+            font-size: 1.5rem;
+            width: 80%;
+        }
+        .gallery2 {
+            width: 100%;
+        }
+        .gallery2 {
+            width: 100%;
+        }
+         .main1 h1 {
+             font-size: 2rem;
+             width: 100%;
+          
+         }
+         
+         .service {
+             height: auto;
+             width: 100%;
+             display: grid;
+             margin: 2rem auto;
+         }
+         
+         .service .part1 {
+             height: 100%;
+             width: 100%;
+         }
+         
+         .service .part2 {
+             height: 100%;
+             width: 100%;
+         }
+         
+         .service .part1 h1 {
+             margin: 0px auto;
+             font-size: 1.5rem;
+         }
+         
+         .service .part1 li {
+             font-size: 1rem;
+         }
+         
+         .service .part2 h1 {
+             font-size: 1.5rem;
+         
+         }
+         
+         .service .part2 p {
+             font-size: 1rem;
+        
+         }
+         
+         .service .part2 a {
+             text-decoration: none;
+             font-size: 1rem;
+             font-weight: 800;
+             text-align: center;
+             padding: 0.5rem 1rem;
+        
+        
+         }
+         .yt-video .swiper{
+            width:100%;
+            
+        }
+        .yt-video .swiper .gallaryswip{
+            width:90%;
+        }
+        .yt-video .swiper .swiper-button-next{
+            color:  black;
+        }
+        .cover-page{
+            width: 100%;
+            height: 16vh;
+        }
+    
+}
+
+@media (max-width: 767px) {
+    .asian-nav {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0.3rem;
+    }
+    .navbar-custom .navbar-nav .nav-item .nav-link{
+        font-size: 1.2rem;
+    }
+    .logo {
+        display: none;
+    }
+
+    .sliders {
+        height: 30vh;
+    }
+
+    .product-wrapper {
+        width: 100vw;
+        height: 80vh;
+        margin: 3rem 0px;
+    }
+
+    .product-wrapper .swiper {
+        width: 90%;
+        height: 100%;
+    }
+
+    .product-wrapper .orderdata img {
+        width: 50%;
+        height: 60%;
+        margin: 0px auto;
+    }
+    .d-boffin-wrapper{
+        width: 90%;
+    }
+    .d-boffin-wrapper p{
+        text-align: justify;
+        font-size: 1rem;  
+    }
+    .d-bofin-img img{
+        width: 140px;
+        height: 200px;
+        float: left;
+        margin: 2rem;
+        border-radius: 10px;
+    }
+    .d-boffin-wrapper>ol >li{
+        text-align: justify;
+     font-size: 1rem; 
+ }
+ .d-boffin-wrapper h1{
+    font-size: 2rem;
+}
+.about{
+    width: 70%;
+    display: grid;
+    grid-template-columns:  2fr ;
+    column-gap: 0.2rem;
+    height: auto;
+    margin: 3rem auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.about-img{
+    width: 100%;
+    height: 100%;
+}
+.about-img img{
+    width: 100%;
+    height: 100%;
+    /* border-radius: 5px; */
+}
+.details-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: #afeaff;
+    /* border-radius: 5px; */
+    overflow: hidden;
+    border: none;
+}
+.about-heading{
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.568);
+    color: white;
+    padding: 0.1rem;
+}
+.about-heading>h1{
+    font-size: 1.5rem;
+}
+.about-para{
+    width: 100%;
+    padding: 1rem;
+}
+.about-para p{
+    font-size: 1rem;
+}
+.about-para>ol>li{
+    font-size: 1rem;
+}
+.deal{
+    width: 100%;
+    height: 30vh;
+    overflow: hidden;
+    color: white;
+}
+.contact-baner {
+    width: 100%;
+    height: 40%;
+    }
+    .broiler{
+    display: grid;
+    height: auto;
+ }
+.broiler .broiler-wrapper{
+    width: 100%;
+    height: auto;
+}
+.broiler .contact{
+    width: 100%;
+}
+.broiler .contact h1{
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.broiler .contact .form3 {
+    width: 90%;
+}
+.broiler .contact .form3 .Field{
+    font-size: 1rem;
+}
+.form3 .btn{
+    padding: 0.1rem 1rem;
+    font-size: 1.3rem;
+    float: right;
+}
+.getinwrapper .iconcontaier h1{
+    font-size: 1.3rem;
+
+}
+.getinwrapper .iconcontaier .icon-contect{
+    font-size: 2.5rem;
+}
+.getinwrapper .iconcontaier p{
+    font-size: 0.8rem;
+}
+.cf-wrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+.cf-wrapper .cf-content .cf-title h1{
+    font-size: 1.7rem;
+    
+}
+.cf-wrapper .cf-content .cf-content-wrapper{
+    font-size: 1.2rem;
+}
+.contact>ul>li{
+    font-size: 1.2rem;
+}
+.deal-form{
+    width: 100%;
+}
+.deal-form .deal-form-wrapper{
+    padding: 0rem;
+}
+.deal-form .deal-form-wrapper .enquiry-form {
+    width: 80%;
+}
+.deal-form .deal-form-wrapper .enquiry-form> h1{
+    font-size: 1.8rem;
+}
+.deal-form-wrapper .enquiry-form input,textarea{
+    width: 100%;
+    margin: 0.2rem 0px;
+    padding: 0.4rem;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+.deal-form-wrapper .enquiry-form .btn{
+    font-size: 0.8rem;
+    width: 10rem;
+    margin: 0px auto;
+}
+.testimonials-heading h1{
+    font-size: 1.8rem;
+    
+}
+.testimonials .testimonials-wrapper {
+    height: 100%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr ;
+    /* background: rgb(145, 145, 143); */
+}
+
+.testimonials-content .details h4 {
+    font-size: 1.2rem;
+}
+
+.testimonials-content .details p{
+    font-size: 0.8rem;
+}
+
+.order-form-wrapper{
+    width: 80vw;
+}
+.order-form-wrapper .form-wrapper{
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    background: #d7e5ff; 
+    border-radius: 10px;   
+}
+.form-wrapper .order-form{
+    width:90%;
+    margin: 0px auto;
+    height: 100%;   
+    background: #d7e5ff;
+    padding: 0.2rem;
+    
+}
+.form-wrapper h1{
+    font-size: 1.7rem;
+    padding: 0.5rem;
+}
+.form-wrapper .order-form input,textarea,select{
+    width: 100%;
+    margin: 0.2rem 0px;
+    padding: 0.4rem;
+}
+.form-wrapper .order-form .btn{
+    font-size: 0.9rem;
+    width: 5rem;
+    margin: 0px auto;
+}
+.footer-wrapper{
+    margin: 0rem auto;
+    width: 100%;
+    display: grid;
+}
+.usefulfooter{
+    margin: 1rem 0px ;
+    width: 100%;
+    display : grid;
+}
+.usefulfooter img{
+    width: 10rem;
+    height: 5rem;
+    display: none;
+}
+.usefulfooter .title > h1{
+    font-size: 1.3rem;
+    color: white;
+}
+.enquiry{
+    width: 100%;
+}
+.enquiry> h1{
+    font-size: 1.2rem;
+    color: white;
+}
+.contectfooter{
+    width:100%;
+}
+.about01-wrapper .part1 > h3{
+    font-size: 2rem;
+    text-align: center;
+    border-bottom:  1px solid lightgray;
+}
+.about01-wrapper .part1 >p{
+    font-size: 1rem;
+    margin: 2rem 0px;
+}
+.about01-wrapper{
+    width: 90%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: 1fr ;
+    margin: 1rem auto;
+}
+.vision{
+    width: 90%;
+    height: 50%;
+    margin: 2rem auto;  
+    border-radius: 10px;
+    overflow: hidden;
+}
+.vision .backpic .back{
+    width: 90%;
+    height: 20%;
+}
+.vision .backpic .back >h1{
+    font-size: 2rem;
+}
+.vision .backpic .back >p{
+    font-size: 1.2rem;;
+}
+.intro-wrapper {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: space-between;
+}
+.intro-heading > h1{
+    font-size: 1.5rem;
+    width: 80%;
+}
+.intro-wrapper .intro-img{
+    width: 80%;
+}
+.intro-wrapper .intro-details{
+    width: 100%;
+
+}
+.intro-wrapper .intro-details > p{
+    font-size: 1rem;
+}
+.gallery .title h1{
+    font-size: 1.5rem;
+    width: 80%;
+}
+
+
+
+.gallery2 {
+    width: 100%;
+}
+ .main1 h1 {
+     font-size: 2rem;
+     width: 100%;
+  
+ }
+ 
+ .service {
+     height: auto;
+     width: 100%;
+     display: grid;
+     margin: 2rem auto;
+ }
+ 
+ .service .part1 {
+     height: 100%;
+     width: 100%;
+ }
+ 
+ .service .part2 {
+     height: 100%;
+     width: 100%;
+ }
+ 
+ .service .part1 h1 {
+     margin: 0px auto;
+     font-size: 1.5rem;
+ }
+ 
+ .service .part1 li {
+     font-size: 1rem;
+ }
+ 
+ .service .part2 h1 {
+     font-size: 1.5rem;
+ 
+ }
+ 
+ .service .part2 p {
+     font-size: 1rem;
+
+ }
+ 
+ .service .part2 a {
+     text-decoration: none;
+     font-size: 1rem;
+     font-weight: 800;
+     text-align: center;
+     padding: 0.5rem 1rem;
+
+
+ }
+ .yt-video .swiper{
+    width:100%;
+    
+}
+.yt-video .swiper .gallaryswip{
+    width:100%;
+}
+.yt-video .swiper .swiper-button-next{
+    color:  black;
+}
+.cover-page{
+    width: 100%;
+    height: 15vh;
+}
+
+
+}
+
+
+
+
+@media (max-width: 450px) {
+    .logo {
+        display: none;
+    }
+    .asian-nav {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0.3rem;
+    }
+    .navbar-custom .navbar-nav .nav-item .nav-link{
+        font-size: 1rem;
+    }
+
+    .sliders {
+        height: 30vh;
+    }
+
+    .product-wrapper {
+        width: 100vw;
+        height: 80vh;
+        margin: 1rem 0px;
+    }
+
+    .product-wrapper .swiper {
+        width: 90%;
+        height: 100%;
+    }
+
+    .product-wrapper .orderdata img {
+        width: 80%;
+        height: 50%;
+        margin: 0px auto;
+    }
+    .d-boffin-wrapper{
+        width: 100vw;
+        padding: 0.6rem;
+        margin: 2rem 0px;
+        border-radius: 4px;
+    }
+    .d-boffin-wrapper p{
+        text-align: justify;
+        font-size: 0.8rem;  
+    }
+    .d-bofin-img img{
+        width: 100px;
+        height: 150px;
+        float: left;
+        margin: 1rem;
+        border-radius: 10px;
+    }
+    .d-boffin-wrapper>ol >li{
+        text-align: justify;
+     font-size: 0.8rem; 
+     
+ }
+ .d-boffin-wrapper> h1{
+    font-size: 1.4rem;
+}
+.about{
+    width: 90%;
+    display: grid;
+    grid-template-columns:  2fr ;
+    column-gap: 0.2rem;
+    height: auto;
+    margin: 3rem auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.about-img{
+    width: 100%;
+    height: 100%;
+}
+.about-img img{
+    width: 100%;
+    height: 100%;
+    /* border-radius: 5px; */
+}
+.details-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: #afeaff;
+    /* border-radius: 5px; */
+    overflow: hidden;
+    border: none;
+}
+.about-heading{
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.568);
+    color: white;
+    padding: 0.1rem;
+}
+.about-heading>h1{
+    font-size: 1.5rem;
+}
+.about-para{
+    width: 100%;
+    padding: 1rem;
+}
+.about-para p{
+    font-size: 1rem;
+}
+.about-para>ol>li{
+    font-size: 1rem;
+}
+.deal{
+    width: 100%;
+    height: 30vh;
+    overflow: hidden;
+    color: white;
+}
+.contact-baner {
+width: 100%;
+height: 25%;
+}
+.getinwrapper{
+    margin: 2rem auto;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr ;
+    row-gap: 1rem;
+}
+.getinwrapper .iconcontaier h1{
+    font-size: 1.3rem;
+
+}
+.getinwrapper .iconcontaier .icon-contect{
+    font-size: 2.5rem;
+}
+.getinwrapper .iconcontaier p{
+    font-size: 0.8rem;
+}
+.broiler{
+    display: grid;
+    height: auto;
+ }
+.broiler .broiler-wrapper{
+    width: 100%;
+    height: auto;
+}
+.broiler .contact{
+    width: 100%;
+}
+.broiler .contact h1{
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.broiler .contact .form3 {
+    width: 90%;
+}
+.broiler .contact .form3 .Field{
+    font-size: 1rem;
+}
+.form3 .btn{
+    padding: 0.1rem 1rem;
+    font-size: 1.3rem;
+    float: right;
+}
+.cf-wrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+.cf-wrapper .cf-content .cf-title h1{
+    font-size: 1.5rem;
+    
+}
+.cf-wrapper .cf-content .cf-content-wrapper{
+    font-size: 0.9rem;
+}
+.contact>ul>li{
+    font-size: 0.9rem;
+}
+.deal-form{
+    width: 100%;
+    grid-template-columns: 1fr ;
+}
+.deal-form .deal-form-wrapper{
+    padding: 0rem;
+}
+.deal-form .deal-form-wrapper .enquiry-form {
+    width: 100%;
+    height: auto;
+}
+.deal-form .deal-form-wrapper .enquiry-form> h1{
+    font-size: 1.5rem;
+}
+.deal-form-wrapper .enquiry-form input,textarea{
+    width: 100%;
+    margin: 0.2rem 0px;
+    padding: 0.4rem;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+.deal-form-wrapper .enquiry-form .btn{
+    font-size: 0.8rem;
+    width: 10rem;
+    margin: 0px auto;
+}
+.testimonials-heading h1{
+    font-size: 1.8rem;
+    
+}
+.testimonials .testimonials-wrapper {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr ;
+    /* background: rgb(145, 145, 143); */
+}
+.testimonials-content .details h4 {
+    font-size: 1.2rem;
+}
+
+.testimonials-content .details p{
+    font-size: 0.8rem;
+}
+.order-form-wrapper{
+    width: 100vw;
+}
+.order-form-wrapper .form-wrapper{
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    background: #d7e5ff; 
+    border-radius: 10px;   
+}
+.form-wrapper .order-form{
+    width:90%;
+    margin: 0px auto;
+    height: 100%;   
+    background: #d7e5ff;
+    padding: 0.2rem;
+    
+}
+.form-wrapper h1{
+    font-size: 1.7rem;
+    padding: 0.5rem;
+}
+.form-wrapper .order-form input,textarea,select{
+    width: 100%;
+    margin: 0.2rem 0px;
+    padding: 0.3rem;
+}
+.form-wrapper .order-form .btn{
+    font-size: 0.9rem;
+    width: 5rem;
+    margin: 0px auto;
+}
+.footer-wrapper{
+    margin: 0rem auto;
+    width: 100%;
+    display: grid;
+}
+.usefulfooter{
+    margin: 1rem 0px ;
+    width: 100%;
+    display : grid;
+}
+.usefulfooter img{
+    width: 10rem;
+    height: 5rem;
+    display: none;
+}
+.usefulfooter .title > h1{
+    font-size: 1.3rem;
+    color: white;
+}
+.enquiry{
+    width: 100%;
+}
+.enquiry> h1{
+    font-size: 1.2rem;
+    color: white;
+}
+.contectfooter{
+    width:100%;
+}
+.about01-wrapper .part1 > h3{
+    font-size: 2rem;
+    text-align: center;
+    border-bottom:  1px solid lightgray;
+}
+.about01-wrapper .part1 >p{
+    font-size: 1rem;
+    margin: 2rem 0px;
+}
+.about01-wrapper{
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: 1fr ;
+    margin: 1rem auto;
+}
+.vision{
+    width: 100%;
+    height: 40%;
+    margin: 2rem auto;  
+    border-radius: 10px;
+    overflow: hidden;
+}
+.vision .backpic .back{
+    width: 100%;
+    height: 30%;
+}
+.vision .backpic .back >h1{
+    font-size: 1.5rem;
+}
+.vision .backpic .back >p{
+    font-size: 1rem;;
+}
+.about2{
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+    margin: 2rem 0px;
+}
+ .about2 .part{
+    width: 90%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: 1fr ;
+    margin: 1rem auto;
+}
+.part .part2>p{
+    font-size: 1.2rem;;
+}
+.int{
+    width: 100%;
+}
+.intro-wrapper {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: space-between;
+}
+.intro-heading > h1{
+    font-size: 1.5rem;
+    width: 80%;
+}
+.intro-wrapper .intro-img{
+    width: 100%;
+    margin:1rem  auto;
+}
+.intro-wrapper .intro-details{
+    width: 100%;
+
+}
+.intro-wrapper .intro-details > p{
+    font-size: 1rem;
+}
+
+.intro-details a{
+    font-size: 1rem;
+}
+.gallery .title h1{
+    font-size: 1.5rem;
+    width: 80%;
+}
+
+
+
+
+.gallery2 {
+    width: 100%;
+}
+ .main1 h1 {
+     font-size: 2rem;
+     width: 100%;
+  
+ }
+ 
+ .service {
+     height: auto;
+     width: 100%;
+     display: grid;
+     margin: 2rem auto;
+ }
+ 
+ .service .part1 {
+     height: 100%;
+     width: 100%;
+ }
+ 
+ .service .part2 {
+     height: 100%;
+     width: 100%;
+ }
+ 
+ .service .part1 h1 {
+     margin: 0px auto;
+     font-size: 1.5rem;
+ }
+ 
+ .service .part1 li {
+     font-size: 1rem;
+ }
+ 
+ .service .part2 h1 {
+     font-size: 1.5rem;
+ 
+ }
+ 
+ .service .part2 p {
+     font-size: 1rem;
+
+ }
+ 
+ .service .part2 a {
+     text-decoration: none;
+     font-size: 1rem;
+     font-weight: 800;
+     text-align: center;
+     padding: 0.5rem 1rem;
+
+
+ }
+
+ .yt-video .swiper{
+    width:100%;
+    
+}
+.yt-video .swiper .gallaryswip{
+    width:100%;
+}
+.yt-video .swiper .swiper-button-next{
+    color:  black;
+}
+.cover-page{
+    width: 100%;
+    height: 8vh;
+    display: none;
+}
+
+
+}

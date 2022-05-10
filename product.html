@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="img/asian-CROPPED.jpg" type="image/x-icon">
+  <title>Asian Nutrition</title>
+  <link rel="shortcut icon" href="img/asian-CROPPED-removebg-preview.png" type="image/png" sizes="16x16" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="style1.css" />
+  <link rel="stylesheet" href="css/deal.css" />
+  <link rel="stylesheet" href="product.css" />
+  <link rel="stylesheet" href="css/media.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Beau+Rivage&family=Dancing+Script&family=Rubik:wght@300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body style="background: #F1F3F2;" >
+  <section>
+    <header class="header"></header>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse asian-nav" id="navbarNav">
+          <div class="logo">
+            <a href="#"><img src="img/asian-CROPPED-removebg-preview.png" alt="" /></a>
+          </div>
+          <div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="product.html">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="dealership.html">Dealership</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="order.html">Order Now</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </section>
+<!-- order form  -->
+  <section>
+    <div class="order-form-wrapper" id="order-form-wrapper"> 
+      <div class="form-wrapper">
+        <img src="img/delete-button.png" onclick="close1()" style="float: right; margin:1rem; cursor:pointer"  alt="" width="40px" height="40px">
+        <h1 class="text-center text-dark my-2">Order Now</h1>
+        <p  class=" text-center"><b>any Requirement ?</b></p>
+        <form class="order-form" action="">
+            <input type="text" class="name" placeholder="Enter name" id="name" name="name">
+            <input type="text" class="phone" placeholder="Enter Mobile Number" id="phone" name="phone">
+            <input type="text" class="email" placeholder="Enter Email" id="email" name="email">
+            <input type="text" class="currentbussiness" placeholder="Enter Current Bussiness" id="" name="">
+            <select name="" id="product">
+              <option value="">Product name</option>
+               <option value="">Pre-starter</option>
+               <option value="">Starter</option>
+               <option value="">Finisher</option>
+             </select>
+             <input type="number" placeholder="Enter Quantity (in kgs)">
+            <textarea name="" id="" cols="30" rows="4" class="address" placeholder="Enter your Address" id="" name=""></textarea>
+            <button type="submit" class="btn btn-primary my-4">Submit</button>
+        </form>
+   </div>
+    </div>
+  </section>
+  <!-- order form end -->
+
+  <section class="slider-section">
+    <div class="sliders">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/15005973269_d353b6b4c5_o.jpg" alt="#" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/50770945188_b28d6f97f3_o.jpg"  alt="#" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/jklhkjsdfa.webp" alt="#" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+  <div class="cover-page container-fluid" style="background-image:url('img/LINKEDIN\ COVER\ FINAL\ 11132020\ \ .jpg');background-repeat:no-repeat; background-size:contain;" >
+  </div>
+  <section class="product-wrapper">
+    <div class="container">
+      <h1 class="text-center text-primary">Our Products</h1>
+    </div>
+    <div class="swiper mySwiper1">  
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="orderdata">
+            <img src="img/pre starter.png" alt="" />
+            <div class="orderdata-wrapper">
+                <h1>Pre-Starter</h1>
+              <div>
+                <a href="#" class="btn btn-primary" onclick="open1();">place order</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="orderdata">
+            <img src="img/startyer (1).png" alt="" />
+            <div class="orderdata-wrapper">
+              <h1>Starter</h1>
+              <a href="#" onclick="open1();" class="btn btn-primary">place order</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="orderdata">
+            <img src="img/finisher.png" alt="" />
+            <div class="orderdata-wrapper">
+              <h1>Finisher</h1>
+              <a href="#" class="btn btn-primary" onclick="open1();">place order</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="orderdata">
+            <img src="img/Project_26__1_-removebg-preview.png" alt="" />
+            <div class="orderdata-wrapper" >
+              <h1>Concentrate</h1>
+              <a href="#" class="btn btn-primary" onclick="open1();">place order</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-wrapper">
+    <div class="about">
+      <div class="about-img"><img src="img/farm-5.jpg" alt=""></div>
+      <div class="details-wrapper">
+        <div class="text-center about-heading" ><h1>About D-boffin</h1></div>
+        <div class="about-para">
+          <p>Our Products are manufactured to strict quality control standards using incoming raw materials to provide an efficient finished product. These are Formulated in accordance with current research into poultry <span style="color: green ">nutritions</span> and mixed using a variety of quality raw products.</p>
+    <p>D-boffin is a perfect mix of properly ground grains, nutrients, amino acids, and other vitamins. It helps in the growth of chicken within a balanced diet. Our feed ensures to provide all the required nutrients to the bird.</p>
+        </div>
+      </div>
+    </div>
+    <div class="about">
+      <div class="about-img"><img src="img/farm-6.jpg" alt=""></div>
+      <div class="details-wrapper">
+        <div class="text-center about-heading" ><h1>BENEFITS OF D-BOFFIN</h1></div>
+        <div class="about-para">
+          <ol>
+            <li>The product’s high nutritional value helps in improving performance, growth,</li>
+            <li>It contains amino acids that help in muscle</li>
+     
+        <li>It helps in boosting immunity as it contains Vitamin</li>
+      
+        <li>It helps in increasing the weight and mass of the chicken so as to keep them</li>
+        <li>It helps in increasing metabolism and improves the immune</li>
+        </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="deal container-fluid" style="background-image:url('img/join.webp');background-repeat:no-repeat; background-size:cover;" >
+    <h1>Lets Grow Together  </h1>
+    <a class="btn btn-danger" href="dealership.html">JOIN US</a>
+</div>
+
+  <section >
+    <div class="d-boffin-wrapper">
+      <div class="d-bofin-img"><img src="img/pre starter.png" alt="#"></div>
+      <h1 class=" text-primary" style="padding: 1rem;" >Pre- Starter</h1>
+      <p> D-Boffin Pre-stater is special feed to new-born chicks for  the first 5-6 days post-hatch. This mainly contians protein, Fat, carbohydrates, Vitamin, Minerls and Amino Acid specifiction.</p>
+      <p class="text-danger">pre-Starter feed benefits & features:</p>
+      <ol>
+          
+          <li> Pro-biotics, Protein And other nutrents help to drive body weight gain. </li>
+          <li>D-Boffin Pre-starter feed provides young chicks with all the essential nutrents for immune Systems.</li>
+   
+      <li>D-boffin Pre-starter feed provides Young chicks with all the essential nutrition are easy for chicks to pick-up and ingest.</li>
+      </ol>
+      <p class="text-success">
+      Feeding Schedule:-</p><p>- Fed from 1st day till 6th day post-hatch.
+      </p>
+      <p></p>
+    </div>
+    <div class="d-boffin-wrapper"  >
+      <div class="d-bofin-img" style="float: right;"><img src="img/startyer.png" alt="#"></div>
+      <h1 class="text-primary" style="padding: 1rem;" >Starter</h1>
+      <p> D-Boffin Starter Is aProtein rich variety of chicken feed. Specially designed to meet the dietry requirements of baby chicks..</p>
+      <p class="text-danger">starter Feed Benefits & Features:</p>
+      <ol>
+          
+          <li> It's high protein content (20-24%) helps young chicks grow properly. </li>
+          <li>In addition to Protein; Carbohydrates,Fats,Vitamins and Minerals make-up the rest of the cast of nutritions needed by growing baby chickens.</li>
+      </ol>
+      <p class="text-success">
+      Feeding Schedule:-
+      </p>
+      <ol>
+          <li> Fed starter feed for 02-06 weeks. </li>
+          <li>freash and Clean water should have available to baby chickens 24x7 Hours.</li>
+      </ol>
+    </div>
+
+    <div class="d-boffin-wrapper">
+      <div class="d-bofin-img"><img src="img/finisher.png" alt="#"></div>
+      <h1 class="text-primary" style="padding: 1rem; " >Finisher</h1>
+      <p>Finisher feed is a Complete diet for a chicken between 07-20 weeks age. Commonlly finisher feed containes a protein content that is between 16-18% but has less calcium then regular layer feed.</p>
+        <p class="text-danger">starter Feed Benefits & Features:</p>
+        <ol>
+            
+            <li>Finisher feed supports the continuouing growthing fo young chookies. </li>
+            <li>A balanced amino amino-acids profile of lysine and methionine for overall growth of structural issues iun the chicken.</li>
+            </li>
+     
+        <li>finisher feed provides a balanced source of omega-3 and 6 fatty acids.</li>
+        </ol>
+        <p class="text-success">
+        Feeding Schedule:-
+        </p>
+        <ol>
+            
+            <li> while feeding finisher feed no other grains & supplements are essential.</li>
+            <li>supply sufficient fresh water at all the time.</li>
+     
+        
+        </ol>
+    </div>
+    <div class="d-boffin-wrapper">
+      <div class="d-bofin-img" style="float: right;"><img src="img/Project_26__1_-removebg-preview.png" alt="#"></div>
+      <h1 class= "text-primary" style="padding: 1rem;" > Concentrate</h1>
+      <p> D-Boffin multipurpose poultry concentrate is a premium quality concentrate feed designed for various type of poultry ration. it provide protine, lysine, Methionine, Calcium, Phosphorus, Salt, Vatamins & other trace minerals.</p>
+      <p class="text-danger">Concentrate feed benefits & features:</p>
+      <ol>
+          <li> Concentrate feed provides uniform growth and excellent livability </li>
+          <li>Higher weight gains with improvement in FCR(Feed Conversion Ratio).</li>
+      <li>Concentrate feed is free from Bacteria, Toxins & Pathogens.</li>
+      </ol>
+      <p class="text-success">
+      Feeding Schedule:
+      </p>
+      <ol> 
+          <li> Fed concentrate feed to be mixed with other feed ingredients viz., Maize, Soya bean meal, Groundnut cake and bran etc. </li>
+      </ol>
+
+    </div>
+  </section>
+  <section class="footer">
+    <div class="footer-details">
+      <div class="footer-wrapper">
+        <div class="usefulfooter">
+          <div class="useful" style="display: table">
+            <div class="title">
+              <h1>USEFUL LINKS</h1>
+            </div>
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="product.html">PRODUCT</a></li>
+              <li><a href="bussiness.html">DEALERSHIP</a></li>
+              <li><a href="order.html">ORDER Now</a></li>
+              <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+          </div>
+          <img
+            src="img/asian nutrition logo.jpg"
+            width="250px"
+            height="120px"
+            alt=""
+          />
+        </div>
+
+        <div class="enquiry">
+          <h1>ENQUIRY NOW FOR DEALERSHIP</h1>
+          <a href="" class="button">Enquiry now</a>
+          <div class="footericons">
+            <div class="icon">
+              <a href="https://www.instagram.com/asian_nutritions/"
+                ><img src="img/instagram.png" alt=""
+              /></a>
+            </div>
+            <div class="icon">
+              <a href="https://www.facebook.com/AsianNutritions"
+                ><img src="img/facebook.png" alt=""
+              /></a>
+            </div>
+            <div class="icon">
+              <a href=""><img src="img/twitter.png" alt="" /></a>
+            </div>
+
+            <div class="icon">
+              <a href=""><img src="img/linkedin.png" alt="" /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contectfooter">
+          <div class="footercontect">
+            <i class="fa fa-map iconscontect"> </i>
+            <h2>Main Office</h2>
+            <p>GURUGRAM, HARYANA</p>
+            <p>Sector 49, Gurugram, Haryana 122018</p>
+          </div>
+          <div class="footercontect">
+            <i class="fa fa-envelope iconscontect"> </i>
+            <h2>EMAIL</h2>
+            <p>Info@asiannutritions.com</p>
+            <p>asiannutritions@gmail.com</p>
+          </div>
+          <div class="footercontect">
+            <i class="fa fa-phone iconscontect"> </i>
+            <h2>PHONE NO</h2>
+            <p>+91-7341127643</p>
+            <p>+91-8351012549</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <script src="js/anpl.js"></script>
+</body>
+
+</html>
