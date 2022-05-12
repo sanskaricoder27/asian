@@ -18,9 +18,7 @@
     $address=$_POST['address'];
 
     $to = "darshanam275@gmail.com";
-    $subject = "My subject";
-    $headers = "From:  $name " ;
-    
+    $headers = "From:  $name ";
     mail($to,$subject,$name, $address,$headers);
 
 

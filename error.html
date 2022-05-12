@@ -9,6 +9,34 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link rel="shortcut icon" href="img/asian-CROPPED.jpg" type="image/x-icon">
   <title>Asian Nutrition</title>
+  <style>
+      .process{
+          animation-name: process;
+          animation-duration: 1000ms;
+          animation-iteration-count: infinite;
+          transition: all 0.2s;
+      }
+      .process-c{
+          top: 25%;
+          left: 50%;
+          position: absolute;
+          transform: translate(-50% , -50%);
+          width: 100px;
+          height: 100px;
+      }
+      @keyframes process {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+        
+ 
+        
+          
+      }
+  </style>
   <link rel="shortcut icon" href="img/asian-CROPPED-removebg-preview.png" type="image/png" sizes="16x16" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -26,15 +54,23 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 </head>
 
 <body style="background: #F1F3F2;" >
-  <div class="my-5"><h1 class="text-center text-success">Please fill the required feilds</h1></div>
+  <div class="my-5"><h1 class="text-center text-success">Please fill the required feilds</h1>
+    <br>
+  <h3 class="text-center text-danger">Page Redirecting.....</h3> <br>
+  <h4 class="text-center">To Home Page</h4>
+ <div class=" process-c" style="margin: 0px auto;"> <img src="img/process.png" class="process" alt="" width="70px" height="70px"></div>
+</div>
+
+
   <script>
     var a = setTimeout(redirect, 2000);
 
     function redirect() {
-        location.assign("dealership.html");
+        location.assign("index.html");
         document.getElementById('asianform').reset();
     }
 </script>

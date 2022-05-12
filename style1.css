@@ -39,6 +39,9 @@
     height: 5rem;
     ;
 }
+.logo1{
+    display: none;
+}
 
 .logo a img {
     width: 100%;
@@ -155,7 +158,7 @@ body {
 /* product-section */
 .product-wrapper {
     width: 100vw;
-    height: 60vh;
+    height: auto;
     margin: 3rem 0px;
 }
 
@@ -204,6 +207,9 @@ body {
     width: 50%;
     height: 70%;
     margin: 0px auto;
+}
+.product-wrapper .container h1{
+    margin: 1rem;
 }
 
 .about{
@@ -501,7 +507,7 @@ background: #AFEAFF;
     display: grid;
     margin: 0px auto;
     height: auto ;   
-    background: #d7e5ff;
+    background: #d7e5ff; 
     padding: 1rem;
     border-radius: 5px;
 }
@@ -578,7 +584,7 @@ background: #AFEAFF;
 
 
 .testimonials-content .details {
-    height: auto;
+    height: 100%;
     width: 100%;
     padding: 1rem;
     background: white;
@@ -1194,7 +1200,7 @@ margin: 1rem;
     }
     .product-wrapper {
         width: 100vw;
-        height: 80vh;
+        height: auto;
         margin: 3rem 0px;
     }
 
@@ -1311,6 +1317,10 @@ margin: 1rem;
         width: 100%;
         height: 29vh;
     }
+    .process-c{
+        top: 33%;
+        left: 52%;
+    }
     
 }
 
@@ -1320,7 +1330,7 @@ margin: 1rem;
     }
     .product-wrapper {
         width: 100vw;
-        height: 80vh;
+        height: auto;
         margin: 3rem 0px;
     }
 
@@ -1584,6 +1594,10 @@ margin: 1rem;
         width: 100%;
         height: 20vh;
     }
+    .process-c{
+        top: 33%;
+        left: 52%;
+    }
     
 }
 
@@ -1599,6 +1613,15 @@ margin: 1rem;
     .logo {
         display: none;
     }
+    .logo1{
+        display: block;
+    }
+    .logo1 a img{
+        width: 150px;
+        height: 70px;
+        float: right;
+    }
+
 
     .sliders {
         height: 40vh;
@@ -1606,7 +1629,7 @@ margin: 1rem;
 
     .product-wrapper {
         width: 100vw;
-        height: 80vh;
+        height: auto;
         margin: 3rem 0px;
     }
 
@@ -1952,6 +1975,10 @@ margin: 1rem;
             width: 100%;
             height: 16vh;
         }
+        .process-c{
+            top: 33%;
+            left: 55%;
+        }
     
 }
 
@@ -1967,6 +1994,14 @@ margin: 1rem;
     .logo {
         display: none;
     }
+    .logo1{
+        display: block;
+    }
+    .logo1 a img{
+        width: 150px;
+        height: 70px;
+        float: right;
+    }
 
     .sliders {
         height: 30vh;
@@ -1974,7 +2009,7 @@ margin: 1rem;
 
     .product-wrapper {
         width: 100vw;
-        height: 80vh;
+        height: auto;
         margin: 3rem 0px;
     }
 
@@ -2351,6 +2386,10 @@ margin: 1rem;
     width: 100%;
     height: 15vh;
 }
+.process-c{
+    top: 33%;
+    left: 55%;
+}
 
 
 }
@@ -2361,6 +2400,14 @@ margin: 1rem;
 @media (max-width: 450px) {
     .logo {
         display: none;
+    }
+    .logo1 {
+        display: block !important;
+    }
+    .logo1  a img{
+        width: 150px;
+        height: 70px;
+        float: right;
     }
     .asian-nav {
         display: flex;
@@ -2377,7 +2424,7 @@ margin: 1rem;
 
     .product-wrapper {
         width: 100vw;
-        height: 80vh;
+        height: auto;
         margin: 1rem 0px;
     }
 
@@ -2791,6 +2838,10 @@ height: 25%;
     width: 100%;
     height: 8vh;
     display: none;
+}
+.process-c{
+    top: 35%;
+    left: 55%;
 }
 
 

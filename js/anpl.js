@@ -11,33 +11,32 @@ var swiper = new Swiper(".mySwiper", {
       dynamicBullets: true,
     },
   });
-  var swiper = new Swiper(".mySwiper1", {
-    slidesPerView: 3,
-    spaceBetween: 20,
-    loop: true,
 
-    grabCursor: true,
-    pagination: {
-      el: ".swiper-pagination",
-      dynamicBullets: true,
-      clickable: true,
-    },
-    autoplay: {
-      delay: 3500,
-      disableOnInteraction: false,
-    },
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
-      },
+  // var swiper = new Swiper(".mySwiper1", {
+  //   slidesPerView: 3,
+  //   spaceBetween: 30,
+  //   loop: true,
 
-      426: {
-        slidesPerView: 3,
-      },
-    },
-  });
-
-
+  //   grabCursor: true,
+  //   pagination: {
+  //     el: ".swiper-pagination",
+  //     dynamicBullets: true,
+  //     clickable: true,
+  //   },
+  //   autoplay: {
+  //     delay: 2500,
+  //     disableOnInteraction: false,
+  //   },
+  //   breakpoints: {
+  //     0: {
+  //       slidesPerView: 2,
+  //       spaceBetween: 5,
+  //     },
+  //     426: {
+  //       slidesPerView: 3,
+  //     },
+  //   },
+  // });
   var swiper = new Swiper(".mySwiper2", {
     slidesPerView: 3,
     spaceBetween: 40,
@@ -73,7 +72,31 @@ var swiper = new Swiper(".mySwiper", {
       },
     },
   });
- 
+  var swiper = new Swiper(".mySwiper1", {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    loop: true,
+
+    grabCursor: true,
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: true,
+      clickable: true,
+    },
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+
+      426: {
+        slidesPerView: 3,
+      },
+    },
+  });
 
   var swiper = new Swiper(".mySwiper4", {
     slidesPerView: 3,
